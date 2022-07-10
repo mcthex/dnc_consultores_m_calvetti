@@ -22,6 +22,9 @@
     color: rgba(191, 171, 147, 1);
 }
 
+
+/* GENERAL */
+
 * {
     font-family: 'Roboto', sans-serif;
     padding: 0;
@@ -63,8 +66,6 @@ main h3 {
     font-weight: 400;
     padding-top: 2rem;
     padding-bottom: 2rem;
-    padding-left: auto;
-    padding-right: auto;
 }
 
 h5 {
@@ -76,7 +77,6 @@ h5 {
     font-size: 4rem;
     font-weight: 400;
     color: black;
-
 }
 
 .tituloMedio {
@@ -84,7 +84,6 @@ h5 {
     font-weight: 400;
     color: black;
     padding-top: 1rem;
-    padding-right: auto;
     padding-bottom: 5rem;
     padding-left: 10rem;
 }
@@ -320,9 +319,9 @@ svg circle {
 
 /* *************** HEADER ************** */
 
-header section {
+header section article {
     padding-left: 5rem;
-    padding-top: 3rem;
+    padding-top: 2rem;
 }
 
 /* ****************** MAIN *************** */
@@ -738,6 +737,7 @@ h6 span {
     }
 }
 
+
 @media (max-width: 768px) {
 
     .fondoIndex {
@@ -760,7 +760,6 @@ h6 span {
 
 
     .pie {
-
         flex-direction: column-reverse;
     }
 
@@ -770,13 +769,19 @@ h6 span {
 
     .tituloGrande {
         font-size: 4rem;
+        padding-top: 0;
     }
 
     .tituloMedio {
         font-size: 2rem;
-        padding-top: auto;
         padding-left: 2rem;
-        padding-bottom: auto;
+        padding-top: 1rem;
+        padding-bottom: 0;
+    }
+
+    header section article {
+        padding-left: 2rem;
+        padding-top: .5rem;
     }
 }
 
@@ -891,4 +896,8 @@ h6 span {
         font-size: 2.5rem;
     }
 
+    .mapa {
+        width: 35rem;
+        height: 25rem;
+    }
 }

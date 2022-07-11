@@ -146,14 +146,6 @@ h5 {
 
 }
 
-.fondoIndex {
-    background-image: linear-gradient(rgba(5, 7, 12, 0.7), rgba(5, 7, 12, 0.7)),
-        url(../img/header.png);
-    background-attachment: none;
-    background-size: cover;
-    height: 25vh;
-}
-
 .fondoServicios {
     background-image: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)),
         url(../img/bgservices.jpg);
@@ -249,12 +241,6 @@ nav ul li a:hover {
 
 /* *************** BOTONERA REDES SOCIALES ************** */
 
-.header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .botoRedes {
     display: flex;
     flex-direction: row;
@@ -324,6 +310,45 @@ header section article {
     padding-top: 2rem;
 }
 
+.slider{
+    width: 100%;
+    margin: auto;
+    height: 25vh;
+    overflow: hidden;
+}
+
+.slider ul {
+    display: flex;
+    padding: 0;
+    width: 400%;
+
+    animation: cambio 20s infinite alternate linear;
+}
+
+.slider li {
+    
+    width: 100%;
+    list-style: none;
+}
+
+.slider img {
+    width: 100%;
+}
+
+@keyframes cambio {
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
+
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+
+    75% {margin-left: -300%;}
+    100% {margin-left: -300%;}
+}
+
 /* ****************** MAIN *************** */
 
 main section ol li {
@@ -381,7 +406,6 @@ main section ol li {
 .maquina {
     margin: auto;
     display: table;
-
 }
 
 .maquina h6 {
@@ -684,15 +708,15 @@ h6 span {
         grid-template-rows: auto;
     }
 
-    .headerClientes {
-        height: 20vh;
-    }
-
     .fondoIndex {
         height: 20vh;
     }
 
     .fondoServicios {
+        height: 20vh;
+    }
+
+    .slider{
         height: 20vh;
     }
 
@@ -727,22 +751,20 @@ h6 span {
     }
 
     .tituloGrande {
-        font-size: 4rem;
+        font-size: 3.5rem;
+        margin-top: 0;
+        margin-bottom: 0;
     }
 
     .tituloMedio {
-        font-size: 2.5rem;
-        padding-top: 1rem;
-        padding-left: 4rem;
+        font-size: 2rem;
+        padding-top: 0;
+        padding-left: 1rem;
     }
 }
 
 
 @media (max-width: 768px) {
-
-    .fondoIndex {
-        height: 15vh;
-    }
 
     .cajas {
         grid-template-columns: auto auto;
@@ -758,6 +780,9 @@ h6 span {
         height: 15vh;
     }
 
+    .slider{
+        height: 15vh;
+    }
 
     .pie {
         flex-direction: column-reverse;
@@ -768,15 +793,11 @@ h6 span {
     }
 
     .tituloGrande {
-        font-size: 4rem;
-        padding-top: 0;
+        font-size: 3rem;
     }
 
     .tituloMedio {
         font-size: 2rem;
-        padding-left: 2rem;
-        padding-top: 1rem;
-        padding-bottom: 0;
     }
 
     header section article {
@@ -791,21 +812,15 @@ h6 span {
         flex-direction: column;
     }
 
-    .fondoIndex {
-        height: 12vh;
-    }
-
     .tituloGrande {
-        font-size: 3rem;
-        padding: 0;
+        font-size: 2rem;
 
     }
 
     .tituloMedio {
-        font-size: 2rem;
-        padding: 1rem;
+        font-size: 1.5rem;
+        padding-top: 1rem;
     }
-
 
     .fondoServicios {
         height: 15vh;
@@ -832,6 +847,10 @@ h6 span {
     .pie {
         padding: 4.5rem 1rem;
     }
+
+    .slider{
+        height: 12vh;
+    }
 }
 
 
@@ -856,10 +875,6 @@ h6 span {
         font-size: 1.5rem;
     }
 
-    .fondoIndex {
-        height: 10vh;
-    }
-
     .headerClientes {
         height: 10vh;
     }
@@ -878,11 +893,22 @@ h6 span {
     }
 
     .tituloGrande {
-        font-size: 3rem;
+        font-size: 2rem;
     }
 
     .tituloMedio {
         font-size: 1.5rem;
+        padding-top: 0;
+        padding-left: 0;
+    }
+
+    .slider{
+        height: 10vh;
+    }
+
+    .margen{
+        padding-top: 2rem;
+        padding-bottom: 2rem;
     }
 }
 
@@ -899,5 +925,9 @@ h6 span {
     .mapa {
         width: 35rem;
         height: 25rem;
+    }
+
+    .slider{
+        height: 8vh;
     }
 }

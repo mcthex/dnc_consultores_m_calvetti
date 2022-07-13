@@ -219,12 +219,13 @@ nav ul li a:hover {
 }
 
 .offcanvas-body ul li {
+    font-size: 3rem;
     padding-top: 2rem;
     padding-left: 2rem;
 }
 
 .offcanvas-header h5 {
-    font-size: 1.8rem;
+    font-size: 3rem;
     font-weight: 400;
     color: #a62d37;
     padding-left: 2rem;
@@ -237,6 +238,7 @@ nav ul li a:hover {
     border: none;
     padding-right: 5rem;
 }
+
 
 
 /* *************** BOTONERA REDES SOCIALES ************** */
@@ -313,7 +315,7 @@ header section article {
 .slider{
     width: 100%;
     margin: auto;
-    height: 25vh;
+    height: 20vh;
     overflow: hidden;
 }
 
@@ -332,7 +334,7 @@ header section article {
 
 .slider img {
     width: 100%;
-    height: 25vh;
+    height: auto;
 }
 
 @keyframes cambio {
@@ -677,7 +679,12 @@ h6 span {
 /* *************************** MEDIA ****************************** */
 
 
-@media (max-width: 1030px) {
+@media (max-width: 1024px) {
+
+    .logo__size {
+        margin-top: .5rem;
+        margin-bottom: .5rem;
+    }
 
     .logoPosition {
         transform: translate(-15%);
@@ -706,18 +713,6 @@ h6 span {
     .cajasNosotros {
         grid-template-columns: auto;
         grid-template-rows: auto;
-    }
-
-    .fondoIndex {
-        height: 20vh;
-    }
-
-    .fondoServicios {
-        height: 20vh;
-    }
-
-    .slider{
-        height: 20vh;
     }
 
     .section {
@@ -773,15 +768,15 @@ h6 span {
     }
 
     .headerClientes {
-        height: 15vh;
+        height: 20vh;
     }
 
     .fondoServicios {
-        height: 15vh;
+        height: 20vh;
     }
 
     .slider{
-        height: 15vh;
+        height: 20vh;
     }
 
     .pie {
@@ -806,42 +801,27 @@ h6 span {
     }
 }
 
-@media (max-width: 650px) {
 
-    nav ul {
-        flex-direction: column;
+
+@media (max-width: 480px) {
+
+    html {
+        font-size: 50%;
     }
 
-    .tituloGrande {
-        font-size: 2rem;
-
+    .tituloPrincipal {
+        font-size: 3rem;
     }
 
     .tituloMedio {
-        font-size: 1.5rem;
-        padding-top: 1rem;
-    }
-
-    .fondoServicios {
-        height: 15vh;
-    }
-
-    .headerClientes {
-        height: 15vh;
+        font-size: 1.8rem;
+        padding-top: 2rem;
+        padding-left: 0;
     }
 
     .cajas {
         grid-template-columns: auto;
         grid-template-rows: auto;
-    }
-
-    .mapa {
-        width: 40rem;
-        height: 25rem;
-    }
-
-    .form {
-        width: 85%;
     }
 
     .pie {
@@ -851,66 +831,27 @@ h6 span {
     .slider{
         height: 12vh;
     }
-}
-
-
-@media (max-width: 480px) {
-
-    .tituloPrincipal {
-        font-size: 3rem;
-    }
-
-    .tituloChico {
-        font-size: 2.5rem;
-        padding-left: 2.5rem;
-    }
-
-    html {
-        font-size: 50%;
-    }
-
-    nav ul li {
-        list-style: none;
-        padding-right: 1rem;
-        font-size: 1.5rem;
-    }
-
-    .headerClientes {
-        height: 10vh;
-    }
-
-    .fondoServicios {
-        height: 10vh;
-    }
 
     .icon {
-        margin: 0 1rem;
+        margin: 0 1.5rem;
+        width: 5rem;
+        height: 5rem;
     }
-
 
     .icon i {
-        transform: translate(-30%, -30%);
-    }
-
-    .tituloGrande {
-        font-size: 2rem;
-    }
-
-    .tituloMedio {
-        font-size: 1.5rem;
-        padding-top: 0;
-        padding-left: 0;
-    }
-
-    .slider{
-        height: 10vh;
+        transform: translate(-45%, -45%);
     }
 
     .margen{
         padding-top: 2rem;
         padding-bottom: 2rem;
     }
+
+    .botoRedes {
+        padding-bottom: 3rem;
+    }
 }
+
 
 @media (max-width: 380px) {
 
@@ -927,7 +868,11 @@ h6 span {
         height: 25rem;
     }
 
+    .icon {
+        margin: 0 1rem;
+    }
+
     .slider{
-        height: 8vh;
+        height: 10vh;
     }
 }

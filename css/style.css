@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 
 
 /* PALETA DE COLORES */
@@ -93,6 +94,18 @@ h5 {
     font-weight: 400;
     color: black;
     padding-top: 5px;
+}
+
+
+.exito {
+    font-family: 'Anton', sans-serif;
+    font-weight: 400;
+    font-size: 8rem;
+    background-color: transparent;
+    text-shadow: 3px 0 30px rgba(48, 114, 95, .7);
+    background-position: center;
+    background-size: cover;
+    -webkit-text-stroke: 2px rgba(0, 20, 38, .7);
 }
 
 /* ************************ BODY ********************* */
@@ -219,7 +232,7 @@ nav ul li a:hover {
 }
 
 .offcanvas-body ul li {
-    font-size: 3rem;
+    font-size: 2rem;
     padding-top: 2rem;
     padding-left: 2rem;
 }
@@ -312,7 +325,7 @@ header section article {
     padding-top: 2rem;
 }
 
-.slider{
+.slider {
     width: 100%;
     margin: auto;
     height: 20vh;
@@ -324,7 +337,7 @@ header section article {
     padding: 0;
     width: 400%;
 
-    animation: cambio 20s infinite alternate linear;
+    animation: cambio 15s infinite alternate linear;
 }
 
 .slider li {
@@ -338,17 +351,37 @@ header section article {
 }
 
 @keyframes cambio {
-    0% {margin-left: 0;}
-    20% {margin-left: 0;}
+    0% {
+        margin-left: 0;
+    }
 
-    25% {margin-left: -100%;}
-    45% {margin-left: -100%;}
+    20% {
+        margin-left: 0;
+    }
 
-    50% {margin-left: -200%;}
-    70% {margin-left: -200%;}
+    25% {
+        margin-left: -100%;
+    }
 
-    75% {margin-left: -300%;}
-    100% {margin-left: -300%;}
+    45% {
+        margin-left: -100%;
+    }
+
+    50% {
+        margin-left: -200%;
+    }
+
+    70% {
+        margin-left: -200%;
+    }
+
+    75% {
+        margin-left: -300%;
+    }
+
+    100% {
+        margin-left: -300%;
+    }
 }
 
 /* ****************** MAIN *************** */
@@ -709,6 +742,10 @@ h6 span {
         margin: 0 auto;
     }
 
+    .offcanvas-body ul li {
+        font-size: 3rem;
+    }
+
 
     .cajasNosotros {
         grid-template-columns: auto;
@@ -756,6 +793,10 @@ h6 span {
         padding-top: 0;
         padding-left: 1rem;
     }
+
+    .exito{
+        font-size: 5rem;
+    }
 }
 
 
@@ -775,7 +816,7 @@ h6 span {
         height: 20vh;
     }
 
-    .slider{
+    .slider {
         height: 20vh;
     }
 
@@ -828,7 +869,7 @@ h6 span {
         padding: 4.5rem 1rem;
     }
 
-    .slider{
+    .slider {
         height: 12vh;
     }
 
@@ -842,7 +883,7 @@ h6 span {
         transform: translate(-45%, -45%);
     }
 
-    .margen{
+    .margen {
         padding-top: 2rem;
         padding-bottom: 2rem;
     }
@@ -872,7 +913,7 @@ h6 span {
         margin: 0 1rem;
     }
 
-    .slider{
+    .slider {
         height: 10vh;
     }
 }

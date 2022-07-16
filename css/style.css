@@ -110,39 +110,6 @@ h5 {
 
 /* ************************ BODY ********************* */
 
-.indexGrid {
-    display: grid;
-    height: auto;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    grid-template-areas:
-        "botonera"
-        "header"
-        "principal"
-        "secundario"
-        "footer";
-}
-
-#botonera {
-    grid-area: botonera
-}
-
-#header {
-    grid-area: header;
-}
-
-#principal {
-    grid-area: principal;
-}
-
-#secundario {
-    grid-area: secundario;
-}
-
-#footer {
-    grid-area: footer;
-}
-
 
 .fondoPrincipal {
     background-image: linear-gradient(rgba(0, 20, 38, .9), rgba(0, 20, 38, .9)),
@@ -185,21 +152,15 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: sticky;
-    top: 0;
-    z-index: 1;
 }
 
 nav ul {
-    font-size: 1.8rem;
     font-weight: 350;
-    list-style: none;
     display: flex;
     padding-right: 5rem;
 }
 
 nav ul li {
-    list-style: none;
     padding-right: 2rem;
 }
 
@@ -252,6 +213,9 @@ nav ul li a:hover {
     padding-right: 5rem;
 }
 
+.bg-black {
+    background-color: #000000;
+}
 
 
 /* *************** BOTONERA REDES SOCIALES ************** */
@@ -325,10 +289,11 @@ header section article {
     padding-top: 2rem;
 }
 
+
 .slider {
     width: 100%;
     margin: auto;
-    height: 20vh;
+    height: 30vh;
     overflow: hidden;
 }
 
@@ -394,12 +359,14 @@ main section ol li {
     list-style: none;
 }
 
-#secundario svg {
+.estilos svg {
     fill: #a62d37;
     width: 2.5rem;
     height: 2.5rem;
     transform: translate(-50%, -10%);
 }
+
+
 
 .parrafo__principal {
     width: 80%;
@@ -535,6 +502,14 @@ h6 span {
 
 
 /* ******* GALERIA DE CLIENTES ********** */
+
+.caroSize {
+    width: 80%;
+    margin: auto;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
 
 .gridContainer {
     width: 85%;
@@ -695,10 +670,6 @@ h6 span {
 /* *************************** BACKGROUNDS ****************************** */
 
 
-.bg-black {
-    background-color: #08508f;
-}
-
 .bg-green {
     background-color: rgba(48, 114, 95, .7);
 }
@@ -727,7 +698,6 @@ h6 span {
         width: 100%;
         flex-direction: column;
         height: auto;
-        padding: auto;
     }
 
     nav ul {
@@ -743,7 +713,7 @@ h6 span {
     }
 
     .offcanvas-body ul li {
-        font-size: 3rem;
+        font-size: 1.8rem;
     }
 
 
@@ -797,6 +767,10 @@ h6 span {
     .exito{
         font-size: 5rem;
     }
+
+    .slider {
+        height: 20vh;
+    }
 }
 
 
@@ -817,7 +791,7 @@ h6 span {
     }
 
     .slider {
-        height: 20vh;
+        height: 18vh;
     }
 
     .pie {
@@ -870,7 +844,7 @@ h6 span {
     }
 
     .slider {
-        height: 12vh;
+        height: 11vh;
     }
 
     .icon {
@@ -914,6 +888,13 @@ h6 span {
     }
 
     .slider {
-        height: 10vh;
+        height: 9vh;
+    }
+}
+
+@media (max-width: 380px) {
+
+    .slider {
+        height: 6vh;
     }
 }

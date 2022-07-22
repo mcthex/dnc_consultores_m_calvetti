@@ -1,0 +1,143 @@
+// Global
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.fondoPrincipal {
+    background-image: linear-gradient(rgba(0, 20, 38, .9), rgba(0, 20, 38, .9)),
+        url(../img/main_bg.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+// Clases globales
+.bordeBajo {
+    border-bottom: 2px solid $red;
+}
+
+.bg-green {
+    background-color: $greenLight;
+}
+
+.bg-red {
+    background-color: $red;
+}
+
+.parrafoPrincipal {
+    width: $w-80;
+    height: auto;
+    padding: 0 auto;
+    text-align: justify;
+    margin: 0 auto;
+    overflow: auto;
+    color: $beige;
+    font-size: $textMd;
+    font-weight: $textBold;
+    line-height: 4rem;
+}
+
+.parrafoSecundario {
+    width: $w-80;
+    height: auto;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+    color: $red;
+    font-weight: $textRegular;
+    list-style: none;
+}
+
+
+.espacioParrafos {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+// Botonera de redes sociales
+.botoRedes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.icon {
+    position: relative;
+    width: 4rem;
+    height: 4rem;
+    margin: 2rem;
+    border-radius: 50%;
+    transition: all .8s;
+
+    &:hover {
+        background-color: #e60073;
+        box-shadow: 0 0 20px #e60073;
+
+        &:nth-child(2) {
+            background-color: #1877f2;
+            box-shadow: 0 0 20px #1877f2;
+        }
+
+        &:nth-child(3) {
+            background-color: #25d366;
+            box-shadow: 0 0 20px #25d366;
+        }
+
+        &:nth-child(4) {
+            background-color: #1da1f2;
+            box-shadow: 0 0 20px #1da1f2;
+        }
+    }
+
+    i {
+        color: white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 2.5rem;
+    }
+
+    &:hover circle {
+        stroke-dasharray: 220;
+    }
+
+    svg {
+        width: 10rem;
+        height: auto;
+    }
+}
+
+svg {
+    circle {
+        stroke-dasharray: 80;
+        transition: all .8s ease-in-out;
+    }
+}
+// Fin botonera redes sociales
+
+// Footer
+.pie {
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4.5rem 10rem;
+}
+
+.firma {
+    color: white;
+    display: flex;
+    align-items: center;
+}

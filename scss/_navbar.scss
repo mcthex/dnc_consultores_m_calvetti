@@ -1,0 +1,113 @@
+//navbar
+.logoSize {
+    width: 8rem;
+    height: 8rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    margin-left: 3rem;
+}
+
+nav {
+    background-color: $darkBlack;
+    width: $w-100;
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    ul {
+        font-weight: $textRegular;
+        display: flex;
+        padding-right: 5rem;
+
+        li {
+            padding-right: 2rem;
+
+            a {
+                color: white;
+                text-decoration: overline;
+                text-decoration-color: $green;
+
+                &:hover {
+                    font-weight: $textBold;
+                    color: rgb(71, 60, 60);
+                    text-decoration: 5px overline;
+                    text-decoration-color: $green;
+                }
+            }
+        }
+    }
+}
+
+.press {
+    font-weight: $textBold;
+    color: $green;
+    text-decoration: 5px overline;
+    text-decoration-color: $green;
+}
+
+//boton hamburguesa
+.navbar-toggler svg {
+    fill: $red;
+    width: 3rem;
+    height: 3rem;
+}
+
+.offcanvas-body {
+    li {
+        font-size: $textMd;
+        padding-top: 2rem;
+        padding-left: 2rem;
+    }
+}
+
+.offcanvas-header {
+    h5 {
+        font-size: $textLg;
+        font-weight: $textBold;
+        color: $red;
+        padding-left: 2rem;
+    }
+}
+
+.close {
+    fill: $red;
+    width: 3rem;
+    height: 3rem;
+    border: none;
+    padding-right: 5rem;
+}
+
+//titulo con efecto maquina de escribir
+.maquina {
+    margin: auto;
+    display: table;
+
+    h6 {
+        font-family: $maquinaFont;
+        font-weight: $textRegular;
+        font-size: $textLg;
+        color: $colorMaquina;
+        position: relative;
+
+        span {
+            position: absolute;
+            right: 0;
+            width: 0;
+            background: $darkBlack;
+            border-left: 1px solid $darkBlack;
+            animation: writer 4s infinite steps(29);
+        }
+    }
+
+    @keyframes writer {
+        from {
+            width: 100%;
+        }
+
+        to {
+            width: 0;
+        }
+    }
+}
+// Fin efecto maquina de escribir

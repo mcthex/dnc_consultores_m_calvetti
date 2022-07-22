@@ -36,7 +36,7 @@ html {
     font-size: 62.5%;
 }
 
-.logo__size {
+.logoSize {
     width: 8rem;
     height: 8rem;
     margin-top: 2rem;
@@ -208,7 +208,7 @@ nav ul li a:hover {
 }
 
 .close {
-    fill: #d95560;
+    fill: #a62d37;
     width: 3rem;
     height: 3rem;
     border: none;

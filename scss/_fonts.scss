@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+$primaryFont:'Roboto', sans-serif;
+$secondaryFont:'Anton', sans-serif;
+$maquinaFont:'monospace, sans-serif';
+
+$textXxl: 5rem;
+$textXl: 4rem;
+$textLg: 3rem;
+$textMd: 2rem;
+$textSM :1rem;
+
+$textBold:400;
+$textRegular:300;
+
+// Estilos de texto
+.text-center {
+    text-align: center;
+}
+
+.text-italic {
+    font-style: italic;
+}
+
+
+//Titulos
+
+.tituloMedio {
+    color: $green;
+    font-size: 3rem;
+    font-weight: 400;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.tituloPrincipal {
+    font-family: $secondaryFont;
+    color: $green;
+    font-size: $textXxl;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+}
+
+.tituloSecundario {
+    color: $black;
+    font-size: $textXl;
+    font-weight: $textBold;
+    padding-top: 2rem;
+    padding-bottom: 2.5rem;
+}
+
+// Estilos de titulos
+.exito {
+    font-family: $secondaryFont;
+    font-weight: $textBold;
+    font-size: 8rem;
+    background-color: transparent;
+    text-shadow: 3px 0 30px $greenLight;
+    -webkit-text-stroke: 2px $blackLight;
+}

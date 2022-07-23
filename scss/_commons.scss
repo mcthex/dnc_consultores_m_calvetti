@@ -29,34 +29,6 @@ html {
     background-color: $red;
 }
 
-.parrafoPrincipal {
-    width: $w-80;
-    height: auto;
-    padding: 0 auto;
-    text-align: justify;
-    margin: 0 auto;
-    overflow: auto;
-    color: $beige;
-    font-size: $textMd;
-    font-weight: $textBold;
-    line-height: 4rem;
-}
-
-.parrafoSecundario {
-    width: $w-80;
-    height: auto;
-    padding-top: 2rem;
-    padding-bottom: 3rem;
-    margin-right: auto;
-    margin-left: auto;
-    font-size: 2.5rem;
-    line-height: 3.5rem;
-    color: $red;
-    font-weight: $textRegular;
-    list-style: none;
-}
-
-
 .espacioParrafos {
     padding-top: 3rem;
     padding-bottom: 3rem;

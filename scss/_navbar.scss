@@ -4,7 +4,7 @@
     height: 8rem;
     margin-top: 2rem;
     margin-bottom: 1rem;
-    margin-left: 3rem;
+    margin-left: 3rem;   
 }
 
 nav {
@@ -37,6 +37,16 @@ nav {
             }
         }
     }
+
+    @media (max-width: 1024px) {
+        width: 100%;
+        flex-direction: column;
+        height: auto;
+    }
+}
+
+.logoPosition {
+    transform: translate(-15%);
 }
 
 .press {
@@ -83,7 +93,7 @@ nav {
     margin: auto;
     display: table;
 
-    h6 {
+    h1 {
         font-family: $maquinaFont;
         font-weight: $textBold;
         font-size: $textLg;

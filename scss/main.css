@@ -118,13 +118,16 @@ nav ul li {
 nav ul li a {
   color: white;
   text-decoration: overline;
-  text-decoration-color: rgb(48, 114, 95);
+  -webkit-text-decoration-color: rgb(48, 114, 95);
+          text-decoration-color: rgb(48, 114, 95);
 }
 nav ul li a:hover {
   font-weight: 400;
   color: rgb(71, 60, 60);
-  text-decoration: 5px overline;
-  text-decoration-color: rgb(48, 114, 95);
+  -webkit-text-decoration: 5px overline;
+          text-decoration: 5px overline;
+  -webkit-text-decoration-color: rgb(48, 114, 95);
+          text-decoration-color: rgb(48, 114, 95);
 }
 @media (max-width: 1024px) {
   nav {
@@ -141,8 +144,10 @@ nav ul li a:hover {
 .press {
   font-weight: 400;
   color: rgb(48, 114, 95);
-  text-decoration: 5px overline;
-  text-decoration-color: rgb(48, 114, 95);
+  -webkit-text-decoration: 5px overline;
+          text-decoration: 5px overline;
+  -webkit-text-decoration-color: rgb(48, 114, 95);
+          text-decoration-color: rgb(48, 114, 95);
 }
 
 .navbar-toggler svg {
@@ -189,7 +194,16 @@ nav ul li a:hover {
   width: 0;
   background: rgb(0, 0, 0);
   border-left: 1px solid rgb(0, 0, 0);
-  animation: writer 4s infinite steps(29);
+  -webkit-animation: writer 4s infinite steps(29);
+          animation: writer 4s infinite steps(29);
+}
+@-webkit-keyframes writer {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0;
+  }
 }
 @keyframes writer {
   from {
@@ -358,7 +372,8 @@ header article {
   display: flex;
   padding: 0;
   width: 400%;
-  animation: cambio 15s infinite alternate linear;
+  -webkit-animation: cambio 15s infinite alternate linear;
+          animation: cambio 15s infinite alternate linear;
 }
 .slider ul li {
   width: 100%;
@@ -403,6 +418,33 @@ header article {
   background-color: rgb(191, 171, 147);
   border-style: solid;
   border-color: rgb(48, 114, 95);
+}
+
+@-webkit-keyframes cambio {
+  0% {
+    margin-left: 0;
+  }
+  20% {
+    margin-left: 0;
+  }
+  25% {
+    margin-left: -100%;
+  }
+  45% {
+    margin-left: -100%;
+  }
+  50% {
+    margin-left: -200%;
+  }
+  70% {
+    margin-left: -200%;
+  }
+  75% {
+    margin-left: -300%;
+  }
+  100% {
+    margin-left: -300%;
+  }
 }
 
 @keyframes cambio {
@@ -450,6 +492,4 @@ main li {
   background-image: linear-gradient(rgba(1, 21, 38, 0.9), rgba(1, 21, 38, 0.9)), url(../img/pared.jpg);
   background-attachment: none;
   background-size: cover;
-}
-
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */

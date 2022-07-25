@@ -29,8 +29,8 @@ $textRegular:300;
 
 .tituloMedio {
     color: $green;
-    font-size: 3rem;
-    font-weight: 400;
+    font-size: $textLg;
+    font-weight: $textBold;
     padding-top: 2rem;
     padding-bottom: 2rem;
 }
@@ -41,6 +41,15 @@ $textRegular:300;
     font-size: $textXxl;
     padding-top: 4rem;
     padding-bottom: 2rem;
+
+    @media (max-width: 1024px) {
+        font-size: $textXl;
+        padding-top: 0;
+    }
+
+    @media (max-width: 480px) {
+        font-size: $textLg;
+    }
 }
 
 .tituloSecundario {
@@ -50,6 +59,10 @@ $textRegular:300;
     font-weight: $textBold;
     padding-top: 2rem;
     padding-bottom: 2.5rem;
+
+    @media (max-width: 1024px) {
+        font-size: $textLg;
+    }
 }
 
 // Estilos de titulos
@@ -60,6 +73,10 @@ $textRegular:300;
     background-color: transparent;
     text-shadow: 3px 0 30px $greenLight;
     -webkit-text-stroke: 2px $blackLight;
+
+    @media (max-width: 1024px) {
+        font-size: $textXxl;
+    }
 }
 
 

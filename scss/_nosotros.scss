@@ -1,0 +1,51 @@
+.cajasNosotros {
+    width: 85%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+    justify-content: center;
+    padding-top: 5rem;
+    padding-bottom: 4rem;
+
+    @media (max-width: 1024px) {
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+    }
+}
+
+.miCard {
+    font-size: $textMd;
+    font-weight: $textBold;
+    background-color: $greenLight;
+    margin-right: .5rem;
+    padding: 2px;
+    border-radius: 10px;
+
+    &:hover {
+        font-size: 2.2rem;
+        color: $beige;
+    }
+
+    img {
+        border-radius: 10px;
+    }
+}
+
+#estiloNos {
+    padding-bottom: 3rem;
+
+    h2 {
+        font-size: $textLg;
+        padding-top: 3rem;
+    }
+
+    b {
+        color: $green;
+    }
+}
+
+.imgSize {
+    width: 30rem;
+    height: auto;
+}

@@ -24,6 +24,11 @@ $textRegular:300;
     font-style: italic;
 }
 
+.text-left {
+    text-align: left;
+    padding-left: 10rem;
+}
+
 
 //Titulos
 
@@ -62,6 +67,37 @@ $textRegular:300;
 
     @media (max-width: 1024px) {
         font-size: $textLg;
+    }
+}
+
+
+.tituloHeaders {
+    font-family: $primaryFont;
+    color: $darkBlack;
+    font-size: $textXl;
+    font-weight: $textBold;
+    padding-top: 2rem;
+    padding-bottom: 2.5rem;
+
+    @media (max-width: 1024px) {
+        font-size: $textLg;
+    }
+
+    @media (max-width: 380px) {
+        padding-left: 0;
+    }
+}
+
+.subTituloHeaders {
+    color: $darkBlack;
+    font-size: $textLg;
+    font-weight: $textBold;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+    @media (max-width: 380px) {
+        font-size: $textSM;
+        padding-left: 0;
     }
 }
 

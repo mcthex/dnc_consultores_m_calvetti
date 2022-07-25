@@ -1,0 +1,113 @@
+.headerClientes {
+    background-image: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)),
+        url(../img/clientes.jpg);
+    background-attachment: none;
+    background-size: cover;
+    height: 30vh;
+
+    @media (max-width: 768px) {
+        height: 20vh;
+    }
+}
+
+// Carousel
+#miCarousel {
+    padding-top: 2rem;
+}
+
+.carousel-item {
+    background: transparent;
+    color: $beige;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+}
+
+.container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-bottom: 2rem;
+
+    h1 {
+        font-size: $textLg;
+        font-weight: $textBold;
+        font-family: monospace, sans-serif;
+        color: whitesmoke;
+
+        @media (max-width: 768px) {
+            font-size: $textMd;
+        }
+
+        @media (max-width: 380px) {
+            font-size: 1.8rem;
+        }
+    }
+
+    p {
+        color: whitesmoke;
+        font-weight: $textRegular;
+        font-size: $textMd;
+
+        @media (max-width: 768px) {
+            font-size: $textSM;
+        }
+
+        @media (max-width: 380px) {
+            font-size: 1.2rem;
+        }
+    }
+}
+.opacidad {
+    opacity: 0.8;
+}
+
+// Galeria de clientes
+.gridContainer {
+    width: 85%;
+    display: grid;
+    margin: auto;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto;
+    justify-content: center;
+
+    div {
+        font-size: $textMd;
+        text-align: center;
+        color: aliceblue;
+        background-color: $greenLight;
+        border: 1px solid $darkBlack;
+        border-radius: 10px;
+        display: flex;
+    }
+
+    img {
+        width: $w-100;
+        height: $w-100;
+        margin: auto;
+        border-radius: 10px;
+    }
+}
+
+.adidas {
+    grid-column: 1/3;
+}
+
+.tesla {
+    grid-row: 3/5
+}
+
+.uruguay {
+    grid-column: 3/5;
+}
+
+.wix {
+    grid-column: 3/5;
+}
+
+.argentina {
+    grid-column: 3/5;
+}

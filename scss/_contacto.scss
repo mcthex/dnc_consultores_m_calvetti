@@ -1,0 +1,98 @@
+.section {
+    height: auto;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    padding-bottom: 4rem;
+
+    @media (max-width: 1024px) {
+        height: auto;
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: auto;
+    }
+}
+
+// Formulario de contacto
+.form {
+    background-color: $blackLight;
+    width: $w-100;
+    max-width: 400px;
+    border-radius: 1em;
+    padding: 2em 1.5em;
+}
+
+
+.formInput {
+    font-size: $textSM;
+    padding: .8rem 1em;
+    outline: none;
+    border: none;
+    border: 1px solid white;
+    border-radius: 0.2em;
+}
+
+.formContainer {
+    width: $w-100;
+    display: grid;
+    gap: 1em;
+    grid-auto-columns: 100%;
+}
+
+.formTitle {
+    color: $beige;
+    font-weight: $textBold;
+    text-align: center;
+    font-size: $textMd;
+    margin-bottom: .4em;
+}
+
+.formInput--message {
+    resize: none;
+    padding: 1.8em 1em;
+    margin-bottom: .5em;
+}
+
+.formCta {
+    font-size: $textSM;
+    background-color: #089fe0;
+    color: white;
+    border: none;
+    font-weight: $textBold;
+    padding: .7em 0;
+    border-radius: .2em;
+    cursor: pointer;
+}
+
+// Mapa
+.mapa {
+    width: 50rem;
+    height: 35rem;
+    border-style: none;
+
+    @media (max-width: 1024px) {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    @media (max-width: 380px) {
+        width: 35rem;
+        height: 25rem;
+    }
+}
+
+.contactanos {
+    color: $red;
+    font-family: $secondaryFont;
+    font-weight: $textBold;
+    font-size: $textXxl;
+    background-color: transparent;
+    text-shadow: 3px 0 30px rgba(48, 114, 95, .9);
+    -webkit-text-stroke: 2px $blackLight;
+}

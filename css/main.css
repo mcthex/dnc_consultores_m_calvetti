@@ -515,7 +515,7 @@ main li {
   padding-top: 1rem;
 }
 
-.subCard {
+.subCard, .textCard {
   color: rgb(48, 114, 95);
   font-size: 2rem;
   font-weight: 400;
@@ -525,17 +525,16 @@ main li {
 
 .textCard {
   font-size: 1.5rem;
-  padding: 0.5rem;
-  font-weight: 400;
+  color: rgb(191, 171, 147);
 }
 
 .cajasNosotros {
-  width: 85%;
-  margin: auto;
   display: grid;
+  justify-content: center;
+  margin: auto;
+  width: 85%;
   grid-template-columns: auto auto auto;
   grid-template-rows: auto;
-  justify-content: center;
   padding-top: 5rem;
   padding-bottom: 4rem;
 }
@@ -646,14 +645,14 @@ main li {
 }
 
 .gridContainer {
-  width: 85%;
   display: grid;
+  justify-content: center;
   margin: auto;
+  width: 85%;
   padding-top: 2rem;
   padding-bottom: 2rem;
   grid-template-columns: auto auto auto auto;
   grid-template-rows: auto auto auto;
-  justify-content: center;
 }
 .gridContainer div {
   font-size: 2rem;
@@ -714,7 +713,7 @@ main li {
 }
 
 .form {
-  background-color: rgba(0, 20, 38, 0.7);
+  background-color: rgba(48, 114, 95, 0.7);
   width: 100%;
   max-width: 400px;
   border-radius: 1em;

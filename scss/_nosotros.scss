@@ -1,10 +1,7 @@
 .cajasNosotros {
-    width: 85%;
-    margin: auto;
-    display: grid;
+    @include dGrid (center, auto, 85%);
     grid-template-columns: auto auto auto;
     grid-template-rows: auto;
-    justify-content: center;
     padding-top: 5rem;
     padding-bottom: 4rem;
 

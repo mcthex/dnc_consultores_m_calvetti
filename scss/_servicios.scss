@@ -34,8 +34,9 @@
     margin: auto;
 }
 
+//Extend /////////////////////////////////
 .textCard {
+    @extend .subCard;
     font-size: $textSM;
-    padding: .5rem;
-    font-weight: $textBold;
+    color: $beige;
 }

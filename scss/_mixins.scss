@@ -1,0 +1,21 @@
+//Extends
+
+
+//mixins ////////////////////////////////////////
+
+//Display Grid
+@mixin dGrid ($justify, $margin, $width) {
+    display: grid;
+    justify-content: $justify;
+    margin: $margin;
+    width: $width;
+}
+
+
+//map
+$bgLights: (
+    'verde': rgba(48, 114, 95, .7),
+    'negro': rgba(0, 20, 38, .7),
+    'blanco': #ffff,
+    'celeste': #089fe0,
+)

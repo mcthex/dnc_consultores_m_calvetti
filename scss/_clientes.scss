@@ -10,7 +10,9 @@
     }
 }
 
+/////////////////////////////////////////
 // Carousel
+/////////////////////////////////////////
 #miCarousel {
     padding-top: 2rem;
 }
@@ -62,17 +64,19 @@
 .opacidad {
     opacity: 0.8;
 }
+/////////////////////////////////////////
+// Fin Carousel
+/////////////////////////////////////////
 
+///////////////////////////////////////////////////////
 // Galeria de clientes
+///////////////////////////////////////////////////////
 .gridContainer {
-    width: 85%;
-    display: grid;
-    margin: auto;
+    @include dGrid (center, auto, 85%);
     padding-top: 2rem;
     padding-bottom: 2rem;
     grid-template-columns: auto auto auto auto;
     grid-template-rows: auto auto auto;
-    justify-content: center;
 
     div {
         font-size: $textMd;

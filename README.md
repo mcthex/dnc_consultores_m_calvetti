@@ -1,10 +1,9 @@
-DNC Consultores
-El  proyecto DNC Consultores es real, se trata de una Consultoría en Gestión de la Calidad, la idea es continuar trabajando en la página para en poco tiempo poder publicarla. Es un proyecto pequeño de 5 páginas, donde se detalla la idea de la empresa y los servicios prestados.
+El proyecto DNC Consultores es real, se trata de una Consultoría (De la que formo parte) en Gestión de la Calidad, la idea es continuar trabajando en la página para en poco tiempo poder publicarla. Es un proyecto pequeño de 5 páginas (Inicio, Servicios, Nosotros, Clientes y Contacto), donde se detalla la idea de la empresa y los servicios prestados.
+El desarrollo de la misma fue extremadamente divertido, llevo mucho tiempo trabajando en fotografía y diseño gráfico, especialmente en banners, folletos, cartelería, publicidad, etc. por lo que el desarrollo de la web representó un muy lindo desafio donde poder utilizar mi experiencia.
 
+Me falta crear las redes sociales y agregarlas en la botonera creada a tal fin, modificar la página de Clientes con clientes reales, continuar detallando los servicios en la página correspondiente, una descripción de los integrantes en Nosotros y agregar información de contacto real.
 
-Me falta crear las redes sociales y agregarlas en la botonera correspondiente, modificar la página de Clientes con clientes reales, continuar detallando los servicios en la página correspondiente, una descripción de los integrantes en Nosotros y agregar información de contacto real.
-
-Es el mismo proyecto desde la clase 1, fue pasando por diferentes etapas dependiendo de lo que ibamos aprendiendo, se puede observar en los diferentes commits :)
+Es el mismo proyecto desde la clase 1, fue pasando por diferentes etapas dependiendo de lo que íbamos aprendiendo, se puede observar en los diferentes commits :)
 
 Utilice Bootstrap para crear el carousel de Clientes y el botón de "Leer más" en Inicio.
 El carousel del Inicio al igual que las animaciones de la botonera de redes sociales y el efecto de máquina de escribir del h1 están hechos con css.
@@ -18,8 +17,7 @@ En cuanto a Maps cree el map llamado $bgLights en _mixins.scss y lo utilice en e
 
 Aplique SEO a todas las páginas y todas son responsive.
 
-
-Ahora para el proyecto final agregue una pagina de error 404 en el boton de "Leer más" situado en la pagina de Inicio. (Ese botón llevaría a una página nueva donde se van a detallar profundamente los servicios prestados).
+Ahora para el proyecto final agregue una pagina de error 404 en el botón de "Leer más" situado en la pagina de Inicio. (Ese botón llevaría a una página nueva donde se van a detallar profundamente los servicios prestados).
 
 El proyecto esta alojado en Netlify   https://dncconsultores.netlify.app/index.html
 

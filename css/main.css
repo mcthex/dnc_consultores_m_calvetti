@@ -608,19 +608,19 @@ main li {
   right: 0;
   padding-bottom: 2rem;
 }
-.container h1 {
+.container h2 {
   font-size: 3rem;
   font-weight: 400;
   font-family: monospace, sans-serif;
   color: whitesmoke;
 }
 @media (max-width: 768px) {
-  .container h1 {
+  .container h2 {
     font-size: 2rem;
   }
 }
 @media (max-width: 380px) {
-  .container h1 {
+  .container h2 {
     font-size: 1.8rem;
   }
 }
@@ -787,6 +787,13 @@ main li {
   background-color: transparent;
   text-shadow: 3px 0 30px rgba(48, 114, 95, 0.9);
   -webkit-text-stroke: 2px rgba(0, 20, 38, 0.7);
+}
+
+.error {
+  width: 100%;
+}
+.error img {
+  width: 50%;
 }
 
 /*# sourceMappingURL=main.css.map */
